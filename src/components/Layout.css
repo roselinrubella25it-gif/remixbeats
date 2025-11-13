@@ -1,0 +1,60 @@
+/* Layout Styles */
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 76px; /* Account for sticky navbar height */
+  width: 100%;
+}
+
+/* Ensure footer is at bottom */
+.layout > footer:last-child {
+  margin-top: auto;
+}
+
+/* Admin pages specific layout */
+.admin-login-page,
+.admin-dashboard-page {
+  background: linear-gradient(135deg, #000 0%, #333 100%);
+  min-height: 100vh;
+}
+
+.admin-login-page .main-content,
+.admin-dashboard-page .main-content {
+  background: transparent;
+  padding-top: 0;
+}
+
+/* Override layout for admin pages */
+.admin-login-page .layout,
+.admin-dashboard-page .layout {
+  background: transparent;
+}
+
+.admin-login-page .beats-footer,
+.admin-dashboard-page .beats-footer {
+  display: none;
+}
+
+.admin-login-page .beats-navbar,
+.admin-dashboard-page .beats-navbar {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px; /* Adjust for smaller navbar on mobile */
+  }
+
+  .admin-login-page,
+  .admin-dashboard-page {
+    padding: 1rem 0;
+  }
+}

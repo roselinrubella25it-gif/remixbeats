@@ -1,0 +1,350 @@
+.support-page {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.support-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.support-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="60" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/></svg>');
+  pointer-events: none;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-features {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-feature i {
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.hero-image img {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform: rotate(-5deg);
+}
+
+/* Section Titles */
+.section-title {
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+/* Quick Help Cards */
+.quick-help-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.quick-help-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.quick-question {
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.quick-answer {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Support Category Cards */
+.support-category-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.support-category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+  margin-bottom: 1rem;
+}
+
+.category-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.category-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.category-articles {
+  margin-bottom: 1rem;
+}
+
+.category-btn {
+  border-radius: 25px;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  transform: scale(1.05);
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.faq-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.faq-accordion .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.faq-accordion .accordion-button {
+  background: white;
+  border: none;
+  font-weight: 600;
+  color: #333;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-body {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact-submit-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 0.875rem 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.contact-submit-btn:disabled {
+  background: #6c757d;
+  transform: none;
+}
+
+/* Resource Cards */
+.resource-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.resource-card .card-body {
+  padding: 2rem 1.5rem;
+}
+
+.resource-card i {
+  margin-bottom: 1rem;
+}
+
+.resource-card .card-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.resource-card .card-text {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.resource-card .btn {
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* Form Styling */
+.support-page .form-control,
+.support-page .form-select {
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.15s ease-in-out;
+}
+
+.support-page .form-control:focus,
+.support-page .form-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.support-page .form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .support-hero {
+    padding: 3rem 0;
+  }
+
+  .section-subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .quick-help-card,
+  .support-category-card,
+  .resource-card {
+    margin-bottom: 1rem;
+  }
+
+  .faq-accordion .accordion-button {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .faq-accordion .accordion-body {
+    padding: 1rem;
+  }
+
+  .contact-submit-btn {
+    width: 100%;
+  }
+}
+
+/* Loading Animation */
+.support-page .spinner-border {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Custom Scrollbar */
+.support-page .accordion::-webkit-scrollbar {
+  width: 6px;
+}
+
+.support-page .accordion::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.support-page .accordion::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.support-page .accordion::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

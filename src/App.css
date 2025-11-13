@@ -1,0 +1,279 @@
+/* Global App Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  width: 100%;
+  overflow-x: hidden;
+ 
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Full Width Container Override */
+.container,
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page Content Centering */
+.page-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive page content */
+@media (max-width: 1200px) {
+  .page-content {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-content {
+    padding: 0 8px;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  /* Large tablets and small desktops */
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  /* Tablets */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Small tablets and large phones */
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .mb-3 {
+    margin-bottom: 0.8rem;
+  }
+
+  .mb-4 {
+    margin-bottom: 1.2rem;
+  }
+
+  .mb-5 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile phones */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile phones */
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Very small mobile phones */
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
