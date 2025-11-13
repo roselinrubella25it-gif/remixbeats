@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
   host: '0.0.0.0',
   port: 5000,
-  allowedHosts: ["https://remixbeats-frontend.onrender.com"]
+  allowedHosts: ["https://remixbeats-backend.onrender.com"]
 }
 }
 )
