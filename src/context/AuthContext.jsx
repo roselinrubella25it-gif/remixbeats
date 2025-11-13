@@ -12,8 +12,10 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
-  const url = "https://remixbeats-backend.onrender.com/api/admin/login";
-  
+  const API_BASE_URL = process.env.NODE_ENV === 'production'
+    ? 'https://remixbeats-backend.onrender.com'
+    : 'http://localhost:5000';
+
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [cart, setCart] = useState([]);
@@ -48,7 +50,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     try {
-      const response = await axios.post('url/api/admin/login', {
+      const response = await axios.post(`${API_BASE_URL}/api/admin/login`, {
         username,
         password
       });
