@@ -12,6 +12,8 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
+  const url = "https://remixbeats-backend.onrender.com/api/admin/login";
+  
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [cart, setCart] = useState([]);
